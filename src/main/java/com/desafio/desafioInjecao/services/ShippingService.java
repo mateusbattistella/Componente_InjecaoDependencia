@@ -13,9 +13,9 @@ public class ShippingService {
 		valor = ((order.getBasic() * order.getDiscount()) / 100);
 
 		if (order.getBasic() <= 100) {
-			return valor + 20;
+			return valor - 20;
 		} else if (order.getBasic() <= 200) {
-			return valor + 12;
+			return valor - 12;
 		} else return valor;
 	}
 
